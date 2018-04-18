@@ -4,9 +4,9 @@
 
 `bamazon-node-mysql-app` is an Amazon-like storefront that will take in orders from the user and deplete stock from the store's inventory.
 
-It is a command line interface app built on the `MySQL` and `node.js` tech stack. 
+It is a command line interface app built with the `MySQL` and `node.js` technology stack. 
 
-The theme is based on a shop found in the PS1 game [Final Fantasy Tactics](https://en.wikipedia.org/wiki/Final_Fantasy_Tactics).
+The theme is based on a typical shop found in the PS1 game [Final Fantasy Tactics](https://en.wikipedia.org/wiki/Final_Fantasy_Tactics).
 
 ## Getting Started
 
