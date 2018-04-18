@@ -1,0 +1,24 @@
+{
+  "name": "bamazon-node-mysql-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanscdo/bamazon-node-mysql-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanscdo/bamazon-node-mysql-app/issues"
+  },
+  "homepage": "https://github.com/ivanscdo/bamazon-node-mysql-app#readme",
+  "dependencies": {
+    "inquirer": "^5.2.0",
+    "mysql": "^2.15.0"
+  }
+}
