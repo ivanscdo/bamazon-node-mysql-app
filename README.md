@@ -20,5 +20,7 @@ The theme is based on a shop found in the PS1 game [Final Fantasy Tactics](https
 2. From your Terminal, navigate to the `bamazon-node-mysql-app/src` directory.
 3. Launch the app with the command: `node bamazonCustomer`.
 4. You'll first be presented with a list of products to buy, then prompted to select the ID of the product you would like to purchase, followed by the quantity you would like to buy. 
-5. If the shop DOES NOT have enough inventory, you will be told presented with the message: "Insufficient quantity! Only x available! Cannot sell y.
-6. However, if the shop DOES have enough inventory, you will be presented with the total for your purchase (using the gil currency of course!). The app will then deplete the quantity you purchased from the MySQL database. 
+5. If the shop DOES NOT have enough inventory, you will be told presented with an Insufficient quantity message.
+* For example: "Insufficient quantity! Only 30 available! Cannot sell 31!
+6. However, if the shop DOES have enough inventory, you will be presented with the total for your purchase (using the gil currency of course!).
+7. The app will then deplete the quantity you purchased from the MySQL database and quit.
