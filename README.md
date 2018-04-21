@@ -16,6 +16,9 @@ The theme is based on a typical shop found in the PS1 game [Final Fantasy Tactic
 * This will install the mysql and inquirer packages.
 
 ## Using the App
+
+### bamazonCustomer
+
 1. Make sure you followed the instructions in the Getting Started section.
 2. From your Terminal, navigate to the `bamazon-node-mysql-app/src` directory.
 3. Launch the app with the command: `node bamazonCustomer`.
@@ -26,3 +29,19 @@ The theme is based on a typical shop found in the PS1 game [Final Fantasy Tactic
 7. The app will then deplete the quantity you purchased from the MySQL database and quit.
 8. To place another order, simply run the `node bamazonCustomer` command again. 
 * Keep in mind your previous order(s) will impact the inventory available. 
+
+### bamazonManager
+
+1. Make sure you followed the instructions in the Getting Started section.
+2. From your Terminal, navigate to the `bamazon-node-mysql-app/src` directory.
+3. Launch the app with the command: `node bamazonManager`.
+4. You'll be presented with a list of options to chose:
+* View Products for Sale - will display all products for sale, including item_id, name, price, and quantity.
+* View Low Inventory - will display all items with an inventory count lower than five.
+* Add to Inventory - will display a prompt that will let the user (manager) add more of any item currently in the store.
+* Add New Product - will display a list of prompts that will allow you to add a new product by entering the following categories:
+    * department_name
+    * product_name
+    * product_description
+    * price
+    * stock_quantity
