@@ -1,6 +1,8 @@
 const   mysql    = require("mysql"),
         inquirer = require("inquirer"),
-        tableFormatter = require("./tableFormatter.js");
+        tableFormatter = require("./tableFormatter_Cust.js");
+        
+        
 
 const connection = mysql.createConnection({
     host: "localhost", 
@@ -16,12 +18,6 @@ var tableHeading = {
     3: "Description", 
     4: "Price"
 };
-var tableData = {
-    1: "item_id", 
-    2: "product_name", 
-    3: "product_description", 
-    4: "price"    
-};
 
 connection.connect(function(error) {
     if(error) throw error;
@@ -33,11 +29,12 @@ connection.connect(function(error) {
 function readProducts() {
 
     connection.query(
-        "SELECT * FROM products", 
+        // "SELECT * FROM products", 
+        "SELECT item_id, product_name, product_description, price FROM products",         
         function(error, result) {
             if(error) throw error;
 
-            let table = new tableFormatter(result, tableHeading, tableData);
+            let table = new tableFormatter(result, tableHeading);            
             table.consoleLog();
             addToCart();
         }
@@ -50,7 +47,7 @@ function addToCart() {
             type: "input",
             message: "ID of product you'd like to buy?",
             name: "productID",
-            validate: (arg) => (isNaN(arg)===false && parseInt(arg)>0 && parseInt(arg)<11) ? true : false
+            validate: (arg) => (isNaN(arg)===false && parseInt(arg)>0) ? true : false
         }
     ).then( buyID => {
         return inquirer.prompt(

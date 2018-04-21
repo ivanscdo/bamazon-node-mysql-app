@@ -26,57 +26,57 @@ VALUES (
     "Potion", 
     "Restores: 30HP", 
     "50",
-    "10"
+    "30"
 ), (
     "Items", 
     "Antidote", 
     "Removes: Poison", 
     "50", 
-    "10"
+    "30"
 ), (
     "Items", 
     "Phoenix Down", 
     "Removes: KO", 
     "300", 
-    "5"
+    "15"
 ), (
-    "Swords", 
+    "Weapons", 
     "Broadsword", 
     "Atk: 4; Def: 5%", 
     "200", 
-    "3"
+    "10"
 ), (
-    "Staves", 
+    "Weapons", 
     "Oak Staff", 
     "Atk: 3; Def: 15%", 
     "120", 
-    "3"
+    "10"
 ), (
-    "Bows", 
+    "Weapons", 
     "Longbow", 
     "Atk: 4; Def: 0%", 
     "800", 
-    "3"
+    "10"
 ), (
-    "Shields", 
+    "Equipment", 
     "Mythril Shield", 
     "Phys Ev: 22%; Mag Ev: 5%", 
     "2500", 
-    "3"
+    "8"
 ), (
-    "Helmets", 
+    "Equipment", 
     "Platinum Helm", 
     "HP Bonus: +90; MP Bonus: -", 
     "8000", 
-    "2"
+    "3"
 ), (
-    "Armor", 
+    "Equipment", 
     "Crystal Armor", 
     "HP Bonus: +110; MP Bonus: -",      
     "19000", 
     "2"
 ), (
-    "Robes", 
+    "Equipment", 
     "Wizard's Robe", 
     "HP Bonus: +30; MP Bonus: 22",      
     "4000", 
