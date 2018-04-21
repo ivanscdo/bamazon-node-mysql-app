@@ -96,7 +96,7 @@ var tableFormatter = function (result, tableHeading) {
                 console.log(
                     space(leftPadding), this.tableHeading[1], 
                     space(2), this.tableHeading[2], 
-                    space(9), this.tableHeading[3], 
+                    space(15), this.tableHeading[3], 
                     space(3), this.tableHeading[4]
                 );
             } else {
